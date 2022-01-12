@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.title {
+  margin: 10px auto;
+  margin-bottom: 80px;
+  font-size: 48px;
+}
+
+.display-wrapper {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.display-value {
+  margin: 0 10px;
+  font-size: 36px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter-btn {
+  padding: 20px;
+  margin: 0 10px;
+  font-size: 24px;
+  background-color: rgb(207, 164, 247);
+  border: none;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  width: 60px;
+  cursor: pointer;
+
+}
+
+.counter-btn:hover {
+  background-color: rgb(199, 145, 250);
+}
+
+.counter-btn:active {
+  background-color: rgb(207, 164, 247);
+}
+
+.input-wrapper {
+  width: 100px;
+  padding: 10px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 28px;
+}
+.add-section-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn {
+  background-color: blueviolet;
+  margin: 0 10px;
+  padding: 20px 10px;
+  color:rgb(236, 231, 240);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: rgb(174, 116, 228);
+}
+
+.add-btn:active {
+  background-color: blueviolet;
 }
